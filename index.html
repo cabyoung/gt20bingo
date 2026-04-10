@@ -128,9 +128,9 @@
   <div class="bingo-grid" id="grid"></div>
 
   <div class="legend">
-    <div class="legend-item"><div class="legend-dot" style="background:#CECBF6;"></div> Find the artist</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#CECBF6;"></div> Ask an artist</div>
     <div class="legend-item"><div class="legend-dot" style="background:#9FE1CB;"></div> Observe the art</div>
-    <div class="legend-item"><div class="legend-dot" style="background:#F5C4B3;"></div> Meet a guest</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#F5C4B3;"></div> Meet someone</div>
   </div>
 
   <button class="reshuffle-btn" onclick="buildCard()">Shuffle new card</button>
@@ -138,33 +138,33 @@
 
 <script>
 const squares = [
-  { text: "Find an artist whose work is inspired by their research", tag: "artist" },
-  { text: "Meet someone from a different GT department than you", tag: "guest" },
+  { text: "Ask an artist if their art is inspired by their research", tag: "artist" },
+  { text: "Meet someone from a different school or department than you", tag: "guest" },
   { text: "Find a piece that uses an unexpected material", tag: "art" },
-  { text: "Talk to an artist and learn one thing about their process", tag: "artist" },
-  { text: "Find a piece that uses color to convey emotion", tag: "art" },
+  { text: "Ask an artist about their process", tag: "artist" },
+  { text: "Ask someone about their favorite song", tag: "guest" },
   { text: "Find someone who came to GT20 for the first time", tag: "guest" },
-  { text: "Find an artist who also does research involving data", tag: "artist" },
-  { text: "Find a piece that surprised you", tag: "art" },
+  { text: "Ask someone to 'elevator pitch' their current project", tag: "guest" },
+  { text: "Ask someone about their hobbies and future hobbies", tag: "guest" },
   { text: "Meet someone whose research is completely different from yours", tag: "guest" },
-  { text: "Talk to an artist and ask what the hardest part was to make", tag: "artist" },
-  { text: "Find a piece with no words that still tells a story", tag: "art" },
-  { text: "Find someone who knows 3+ people at this event", tag: "guest" },
-  { text: "Find an artist who also attends GT20 as a researcher", tag: "artist" },
-  { text: "Find a piece that made you feel something unexpected", tag: "art" },
-  { text: "Find someone who traveled more than 30 min to get here", tag: "guest" },
-  { text: "Ask an artist: 'what do you want people to take away from this?'", tag: "artist" },
-  { text: "Find a piece that incorporates a scientific or technical theme", tag: "art" },
-  { text: "Meet someone whose name you can't pronounce — and learn it", tag: "guest" },
+  { text: "Ask an artist what their favorite piece is", tag: "artist" },
+  { text: "Find a piece that resonates with you", tag: "art" },
+  { text: "Introduce yourself to 3 people you don't know", tag: "guest" },
+  { text: "Find an artist who published research this year or last year", tag: "artist" },
+  { text: "Find a piece that inspires you", tag: "art" },
+  { text: "Find someone who has been abroad", tag: "guest" },
+  { text: "Ask an artist what they value the most about their art", tag: "artist" },
+  { text: "Ask someone about their hottest take", tag: "guest" },
+  { text: "Ask someone what their most used emoji is", tag: "guest" },
   { text: "Find an artist who started making art after starting grad school", tag: "artist" },
-  { text: "Find a piece that reminds you of something from your own life", tag: "art" },
-  { text: "Find someone who is graduating this year", tag: "guest" },
+  { text: "Find a piece that inspires you", tag: "art" },
+  { text: "Find someone who is presenting tomorrow", tag: "guest" },
   { text: "Find a piece that you would hang in your home", tag: "art" },
-  { text: "Talk to an artist about what inspired this specific piece", tag: "artist" },
-  { text: "Find someone who has presented at GT20 before", tag: "guest" },
+  { text: "Talk to an artist about what inspired a specific piece", tag: "artist" },
+  { text: "Find someone who has been to GT20 before", tag: "guest" },
 ];
 
-const tagLabel = { artist: "Find the artist", art: "Observe the art", guest: "Meet a guest" };
+const tagLabel = { artist: "Ask an artist", art: "Observe the art", guest: "Meet someone" };
 
 function shuffle(arr) {
   let a = [...arr];
